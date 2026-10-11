@@ -104,6 +104,6 @@ python3 tools/check.py articles/drafts                   # フォルダ内をま
 
 - [x] 段階1:CLAUDE.md を作る
 - [x] 段階2:フォルダ・テンプレート・チェック用スクリプトを作る
-- [ ] 段階3:テーマ一覧(topics.md)と進捗表(progress.md)を作る(章立て:済/テーマ 50/100本/見直し:未/progress.md:未)
+- [ ] 段階3:テーマ一覧(topics.md)と進捗表(progress.md)を作る(章立て:済/テーマ 75/100本/見直し:未/progress.md:未)
 - [ ] 段階4:試しに下書きを3本書く(0/3本)
 - [ ] 段階5:報告
