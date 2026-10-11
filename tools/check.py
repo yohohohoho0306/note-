@@ -2,7 +2,7 @@
 """味のたねあかし 記事チェック用スクリプト
 
 使い方:
-    python3 tools/check.py articles/drafts/001_塩の役割.md
+    python3 tools/check.py articles/drafts/001_塩分濃度.md
     python3 tools/check.py articles/drafts          (フォルダ内の記事をまとめて調べる)
 
 記事ファイルが執筆ルールに合っているかを調べ、結果を日本語で表示します。
@@ -285,7 +285,7 @@ def check_measures(body):
                             "確かめてください")
     if ng:
         return NG, "大さじ・小さじ・カップがかっこの外にあります", [
-            *ng, *warn, "分量はグラム表記にし、200g(大さじ1)のようにかっこ内に残します"]
+            *ng, *warn, "分量はグラム表記にし、18g(大さじ1)のようにかっこ内に残します"]
     if warn:
         return WARN, "分量の表記で確かめてほしい所があります", warn
     return OK, "大さじ・小さじ・カップは、すべてかっこ内です", []
