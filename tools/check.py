@@ -131,15 +131,19 @@ def count_body(body):
     return sum(count_line(line) for _, line in body)
 
 
-def paren_depths(line):
-    """行の各文字が、かっこ(全角・半角)の何重目の内側にあるかを返す。"""
+def paren_depths(line, opens="(\uff08", closes=")\uff09"):
+    """行の各文字が、かっこの何重目の内側にあるかを返す。
+
+    ふつうは丸かっこ(全角・半角)を数える。opens・closes を変えれば、
+    かぎかっこ「」なども数えられる。
+    """
     depths = []
     depth = 0
     for ch in line:
-        if ch in "(\uff08":
+        if ch in opens:
             depth += 1
             depths.append(depth)
-        elif ch in ")\uff09":
+        elif ch in closes:
             depths.append(depth)
             depth = max(0, depth - 1)
         else:
@@ -256,15 +260,20 @@ def check_title(fields, body):
 
 
 def check_measures(body):
-    """大さじ・小さじ・カップが、かっこの外に出ていないか。"""
+    """大さじ・小さじ・カップが、かっこの外に出ていないか。
+
+    後ろに数があれば分量とみなして NG。数がないときや、
+    「小さじ1」のようにかぎかっこで引用しているときは注意にとどめる。
+    """
     ng, warn = [], []
     for no, line in body:
         s = remove_confirm(line)
         depths = paren_depths(s)
+        quoted = paren_depths(s, "「『", "」』")
         for m in MEASURE_RE.finditer(s):
             if depths[m.start()] > 0:
                 continue
-            if QUANTITY_AFTER_RE.match(s, m.end()):
+            if QUANTITY_AFTER_RE.match(s, m.end()) and not quoted[m.start()]:
                 ng.append(f"{no}行目:「{m.group(0)}」がかっこの外にあります"
                           f"「{short(s)}」")
             else:
