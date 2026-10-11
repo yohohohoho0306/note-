@@ -1,0 +1,5 @@
+# Python が自動で作るキャッシュ
+__pycache__/
+*.pyc
+# Mac が自動で作るファイル
+.DS_Store
