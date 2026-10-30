@@ -71,6 +71,14 @@ LINK_RE = re.compile(r"\[([^\]]*)\]\([^)]*\)")
 INLINE_MARK_RE = re.compile(r"==|\*\*|__|~~|[`|*]")
 SPACE_RE = re.compile(r"\s+")
 
+# 記事の最後の案内(関連回・有料記事)の見出し
+GUIDE_HEADING = "あわせて読みたい"
+GUIDE_HEADING_RE = re.compile(r"^##\s+" + GUIDE_HEADING + r"\s*$")
+SUMMARY_HEADING_RE = re.compile(r"^##\s+まとめ")
+MAX_GUIDE_ITEMS = 3
+# テンプレートの書きかけ
+PLACEHOLDER_RE = re.compile(r"第○回|[(\uff08](?:タイトル|どんなこと|有料記事を公開したあと)")
+
 OK, NG, WARN = "OK", "NG", "注意"
 
 
@@ -361,6 +369,42 @@ def check_images(path, fields, body):
     return OK, "画像はありません", []
 
 
+def check_guide(body):
+    """記事の最後に「## あわせて読みたい」(関連回・有料記事の案内)があるか。"""
+    start = summary_no = None
+    for i, (no, line) in enumerate(body):
+        s = line.strip()
+        if SUMMARY_HEADING_RE.match(s):
+            summary_no = no
+        if GUIDE_HEADING_RE.match(s):
+            start = i
+    if start is None:
+        return NG, f"記事の最後の案内(## {GUIDE_HEADING})がありません", [
+            f"次回の予告のあとに「## {GUIDE_HEADING}」の見出しを置き、"
+            "関係する回を1〜3つ箇条書きにしてください(templates/article.md を参照)"]
+    heading_no = body[start][0]
+    items, warn = [], []
+    for no, line in body[start + 1:]:
+        s = remove_confirm(line).strip()
+        if HEADING_RE.match(s):
+            break
+        if LIST_RE.match(s):
+            items.append(no)
+            if PLACEHOLDER_RE.search(s):
+                warn.append(f"{no}行目:テンプレートの書きかけが残っています「{short(s)}」")
+    if not items:
+        return NG, f"「## {GUIDE_HEADING}」の下に案内が1つもありません", [
+            f"{heading_no}行目の見出しの下に、関係する回を箇条書きで1〜3つ書いてください"]
+    if len(items) > MAX_GUIDE_ITEMS:
+        warn.append(f"案内が{len(items)}つあります。{MAX_GUIDE_ITEMS}つまでにしぼると読まれやすくなります")
+    if summary_no is not None and summary_no > heading_no:
+        warn.append(f"{heading_no}行目:「## まとめ」より前にあります。記事の最後(次回の予告のあと)に置いてください")
+    title = f"記事の最後の案内(## {GUIDE_HEADING})が{len(items)}件あります"
+    if warn:
+        return WARN, title, warn
+    return OK, title, []
+
+
 # ---------------------------------------------------------------
 # 実行
 # ---------------------------------------------------------------
@@ -381,6 +425,7 @@ def check_file(path):
         results += [
             check_length(body),
             check_hashtag(body),
+            check_guide(body),
             check_title(fields, body),
             check_measures(body),
             check_highlights(body, fields),
