@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 # Mac が自動で作るファイル
 .DS_Store
+# YouTube の字幕と概要欄(著作物なので公開のリポジトリに入れない)
+research/記録json/
