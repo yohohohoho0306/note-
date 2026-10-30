@@ -26,6 +26,8 @@ MAX_CHARS = 2200
 
 # 管理欄の項目(この順番で記事の冒頭に置く)
 HEADER_FIELDS = ["通し番号", "タイトル", "旬の食材", "状態", "投稿予定日"]
+# 書いても書かなくてもよい管理欄の項目
+EXTRA_FIELDS = ["見出し画像"]
 # 空欄でもよい項目
 OPTIONAL_FIELDS = ["投稿予定日"]
 STATES = ["未着手", "下書き", "添削済", "投稿済"]
@@ -37,7 +39,8 @@ SEPARATOR_RE = re.compile(r"この線より下を\s*note\s*に貼る")
 
 FILENAME_RE = re.compile(r'^([0-9]{3})_([^\s/\\:*?"<>|]+)\.md$')
 HEADER_RE = re.compile(
-    r"^\s*[-*]?\s*(" + "|".join(HEADER_FIELDS) + r")\s*[:\uff1a]\s*(.*?)\s*$"
+    r"^\s*[-*]?\s*(" + "|".join(HEADER_FIELDS + EXTRA_FIELDS)
+    + r")\s*[:\uff1a]\s*(.*?)\s*$"
 )
 DATE_RE = re.compile(r"^[0-9]{4}-[0-9]{2}-[0-9]{2}$")
 COMMENT_RE = re.compile(r"<!--.*?-->", re.S)
@@ -62,6 +65,8 @@ HEADING_RE = re.compile(r"^#{1,6}\s+")
 QUOTE_RE = re.compile(r"^(>\s*)+")
 LIST_RE = re.compile(r"^([-*+]|\d+[.)])\s+")
 IMAGE_RE = re.compile(r"!\[[^\]]*\]\([^)]*\)")
+# 画像の行。グループ1が説明(alt テキスト)、グループ2がファイルの場所
+IMAGE_REF_RE = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)")
 LINK_RE = re.compile(r"\[([^\]]*)\]\([^)]*\)")
 INLINE_MARK_RE = re.compile(r"==|\*\*|__|~~|[`|*]")
 SPACE_RE = re.compile(r"\s+")
@@ -330,6 +335,32 @@ def check_highlights(body, fields):
     return OK, "ハイライトはありません", []
 
 
+def check_images(path, fields, body):
+    """本文の画像と見出し画像のファイルがあるか。画像に説明がついているか。"""
+    ng, warn = [], []
+    base = path.parent
+    header_image = fields.get("見出し画像", "")
+    if header_image and not (base / header_image).is_file():
+        ng.append(f"見出し画像「{header_image}」のファイルが見つかりません")
+    n = 0
+    for no, line in body:
+        for m in IMAGE_REF_RE.finditer(line):
+            n += 1
+            alt, src = m.group(1).strip(), m.group(2)
+            if not (base / src).is_file():
+                ng.append(f"{no}行目:画像「{src}」のファイルが見つかりません")
+            if not alt:
+                warn.append(f"{no}行目:画像に説明(alt テキスト)がありません")
+    title = f"本文の画像 {n}枚" + ("(見出し画像あり)" if header_image else "")
+    if ng:
+        return NG, title + "。見つからない画像があります", ng + warn
+    if warn:
+        return WARN, title, warn
+    if n or header_image:
+        return OK, title + "。ファイルはすべてそろっています", []
+    return OK, "画像はありません", []
+
+
 # ---------------------------------------------------------------
 # 実行
 # ---------------------------------------------------------------
@@ -353,6 +384,7 @@ def check_file(path):
             check_title(fields, body),
             check_measures(body),
             check_highlights(body, fields),
+            check_images(path, fields, body),
         ]
 
     n_ng = n_warn = 0
