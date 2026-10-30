@@ -65,7 +65,7 @@ strategy/                         味のたねあかしに落とし込んだ戦�
 | 2026-08-06 | [【実演】AI(Claude)で有料noteを作って稼ぐ方法を公開します](https://www.youtube.com/watch?v=TO6p-QsR9A4) | 日給100万稼ぐニートパパのnote副業 | 29分 | 2,879 | AI 活用(Claude) | [分析済](youtube/20260806_TO6p-QsR9A4.md) |
 | 2026-06-21 | [【note公式発表】2026年後半はこんなnoteが稼げます](https://www.youtube.com/watch?v=OLTHHBAFVQs) | 日給100万稼ぐニートパパのnote副業 | 26分 | 1,350 | note 公式発表の解説 | [分析済](youtube/20260621_OLTHHBAFVQs.md) |
 | 2026-07-10 | [【完全版】ClaudeCode×note自動化の5ステップで資産を量産させろ!](https://www.youtube.com/watch?v=jXA-boFm_sw) | SHIFT AI ニュース | 18分 | 11,180 | AI 自動化(Claude Code) | [分析済](youtube/20260710_jXA-boFm_sw.md) |
-| 2026-08-19 | [【初心者これ一択】note作成せずに「note」で稼ぐ方法【AIアフィリエイト】](https://www.youtube.com/watch?v=YEOaclYTOD4) | ルパン15世 | 26分 | 25,376 | アフィリエイト | 未読 |
+| 2026-08-19 | [【初心者これ一択】note作成せずに「note」で稼ぐ方法【AIアフィリエイト】](https://www.youtube.com/watch?v=YEOaclYTOD4) | ルパン15世 | 26分 | 25,376 | アフィリエイト | [分析済](youtube/20260819_YEOaclYTOD4.md)(中身は note ではなく別サイトのアフィリエイト) |
 | 2026-09-02 | [noteで楽天アフィリエイトを始める方法|始め方から注意点まで](https://www.youtube.com/watch?v=MhoFzElnlYk) | ゆかチャンネル | 19分 | 1,536 | アフィリエイト | 未読 |
 | 2026-07-29 | [【2026年最新版】note集客完全ガイド|私が月100リストを集める仕組み](https://www.youtube.com/watch?v=54LLvt_qtrk) | いむ先生の起業家大学 | 11分 | 444 | 集客 | 未読 |
 | 2026-07-16 | [【2026年最新版】noteが変わった。SNS不要で収益化できる時代が始まっています](https://www.youtube.com/watch?v=-qvLM7PbDZk) | 在宅ワーク講座 | 20分 | 2,716 | SNS なしの集客 | [分析済](youtube/20260716_-qvLM7PbDZk.md) |
