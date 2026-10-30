@@ -39,18 +39,18 @@ strategy/                         味のたねあかしに落とし込んだ戦�
 | 公開日 | 動画 | チャンネル | 長さ | 再生回数 | 観点 | 状態 |
 |---|---|---|---|---|---|---|
 | 2026-09-05 | [【完全解説】noteで0から月100万円収益化するまでの完全ロードマップ](https://www.youtube.com/watch?v=JqCPtXsVLsE) | note研究家ひらかわ | 95分 | 185,151 | 総合ロードマップ | 未読 |
-| 2026-10-03 | [【最短ルート】今から初心者がnoteで月10万円を稼ぐなら、僕はこれをやります](https://www.youtube.com/watch?v=1vE36sjjHLo) | note研究家ひらかわ | 43分 | 112,863 | 総合ロードマップ | 未読 |
+| 2026-10-03 | [【最短ルート】今から初心者がnoteで月10万円を稼ぐなら、僕はこれをやります](https://www.youtube.com/watch?v=1vE36sjjHLo) | note研究家ひらかわ | 43分 | 112,863 | 総合ロードマップ | [分析済](youtube/20261003_1vE36sjjHLo.md) |
 | 2026-10-17 | [【詰みます】AI×noteで稼げるのは今だけ?収益化の弊害が出る構造的理由](https://www.youtube.com/watch?v=zi65-akmWUc) | note研究家ひらかわ | 50分 | 24,936 | AI 活用 | 未読 |
 | 2026-09-05 | [【累計2億】顔出しナシで稼ぐnote副業の全手順【らっこさんコラボ】](https://www.youtube.com/watch?v=YnWYLPypteM) | うと-おうちnoteで在宅ワーク | 33分 | 170,994 | 総合ロードマップ | 未読 |
 | 2026-05-16 | [【AI丸投げ】有料noteを15分で作る全工程|月10万超えの実績あり](https://www.youtube.com/watch?v=2GpnDwow0mM) | うと-おうちnoteで在宅ワーク | 29分 | 283,275 | AI 活用 | 未読 |
 | 2026-09-19 | [月400万でもnoteメンバーシップは絶対やらない理由](https://www.youtube.com/watch?v=MsszirCjNKM) | うと-おうちnoteで在宅ワーク | 21分 | 6,040 | メンバーシップ | 未読 |
-| 2026-08-25 | [【完全在宅】SNS発信なし、note副業で稼ぐ方法を完全公開!](https://www.youtube.com/watch?v=u4qJ0wMwPXg) | 【在宅副業女子】ぽにょ | 34分 | 386,400 | 総合ロードマップ | 未読 |
-| 2026-10-05 | [【全力反抗】noteは稼げない!!って叩かれてますが、それ正しい稼ぎ方を知らないだけです](https://www.youtube.com/watch?v=4JYuoONUSf8) | 【在宅副業女子】ぽにょ | 33分 | 19,483 | 総合・反論 | 未読 |
-| 2026-08-31 | [【ガチ検証】noteを30日間本気でやったらいくら稼げるのか?](https://www.youtube.com/watch?v=5TPlsukBF5w) | ガチ検証 シズマ | 22分 | 101,001 | 検証 | 未読 |
-| 2026-10-16 | [【ガチ検証】実績0の借金持ちニートにnote副業を教えたら、1ヶ月で15万円稼げちゃった話](https://www.youtube.com/watch?v=e6OLwAshBgw) | かけち | 40分 | 12,529 | 検証 | 未読 |
-| 2026-10-28 | [【noteで月1万円】初心者が最初の売上を作るための具体的な手順を完全解説](https://www.youtube.com/watch?v=2fLzzC4MUfI) | ねこ太note大学 | 19分 | 3,813 | 初心者の最初の売上 | 未読 |
-| 2026-09-02 | [【衝撃】「note1記事じゃ稼げない」は嘘!稼ぐ人はみんなコレやってます](https://www.youtube.com/watch?v=07OA2Jkm1cg) | ねこ太note大学 | 23分 | 25,479 | 記事の設計 | 未読 |
-| 2026-09-09 | [【note収益化】売れるテーマの見つけ方|自分の経験・知識を収益に変える方法](https://www.youtube.com/watch?v=rWxM8VhnpgY) | ねこ太note大学 | 18分 | 15,244 | テーマの選び方 | 未読 |
+| 2026-08-25 | [【完全在宅】SNS発信なし、note副業で稼ぐ方法を完全公開!](https://www.youtube.com/watch?v=u4qJ0wMwPXg) | 【在宅副業女子】ぽにょ | 34分 | 386,400 | 総合ロードマップ | [分析済](youtube/20260825_u4qJ0wMwPXg.md) |
+| 2026-10-05 | [【全力反抗】noteは稼げない!!って叩かれてますが、それ正しい稼ぎ方を知らないだけです](https://www.youtube.com/watch?v=4JYuoONUSf8) | 【在宅副業女子】ぽにょ | 33分 | 19,483 | 総合・反論 | [分析済](youtube/20261005_4JYuoONUSf8.md) |
+| 2026-08-31 | [【ガチ検証】noteを30日間本気でやったらいくら稼げるのか?](https://www.youtube.com/watch?v=5TPlsukBF5w) | ガチ検証 シズマ | 22分 | 101,001 | 検証 | [分析済](youtube/20260831_5TPlsukBF5w.md) |
+| 2026-10-16 | [【ガチ検証】実績0の借金持ちニートにnote副業を教えたら、1ヶ月で15万円稼げちゃった話](https://www.youtube.com/watch?v=e6OLwAshBgw) | かけち | 40分 | 12,529 | 検証 | [分析済](youtube/20261016_e6OLwAshBgw.md) |
+| 2026-10-28 | [【noteで月1万円】初心者が最初の売上を作るための具体的な手順を完全解説](https://www.youtube.com/watch?v=2fLzzC4MUfI) | ねこ太note大学 | 19分 | 3,813 | 初心者の最初の売上 | [分析済](youtube/20261028_2fLzzC4MUfI.md) |
+| 2026-09-02 | [【衝撃】「note1記事じゃ稼げない」は嘘!稼ぐ人はみんなコレやってます](https://www.youtube.com/watch?v=07OA2Jkm1cg) | ねこ太note大学 | 23分 | 25,479 | 記事の設計 | [分析済](youtube/20260902_07OA2Jkm1cg.md) |
+| 2026-09-09 | [【note収益化】売れるテーマの見つけ方|自分の経験・知識を収益に変える方法](https://www.youtube.com/watch?v=rWxM8VhnpgY) | ねこ太note大学 | 18分 | 15,244 | テーマの選び方 | [分析済](youtube/20260909_rWxM8VhnpgY.md) |
 | 2026-08-06 | [【実演】AI(Claude)で有料noteを作って稼ぐ方法を公開します](https://www.youtube.com/watch?v=TO6p-QsR9A4) | 日給100万稼ぐニートパパのnote副業 | 29分 | 2,879 | AI 活用(Claude) | 未読 |
 | 2026-06-21 | [【note公式発表】2026年後半はこんなnoteが稼げます](https://www.youtube.com/watch?v=OLTHHBAFVQs) | 日給100万稼ぐニートパパのnote副業 | 26分 | 1,350 | note 公式発表の解説 | 未読 |
 | 2026-07-10 | [【完全版】ClaudeCode×note自動化の5ステップで資産を量産させろ!](https://www.youtube.com/watch?v=jXA-boFm_sw) | SHIFT AI ニュース | 18分 | 11,180 | AI 自動化(Claude Code) | 未読 |
