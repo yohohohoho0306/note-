@@ -63,7 +63,7 @@ strategy/                         味のたねあかしに落とし込んだ戦�
 | 2026-09-02 | [【衝撃】「note1記事じゃ稼げない」は嘘!稼ぐ人はみんなコレやってます](https://www.youtube.com/watch?v=07OA2Jkm1cg) | ねこ太note大学 | 23分 | 25,479 | 記事の設計 | [分析済](youtube/20260902_07OA2Jkm1cg.md) |
 | 2026-09-09 | [【note収益化】売れるテーマの見つけ方|自分の経験・知識を収益に変える方法](https://www.youtube.com/watch?v=rWxM8VhnpgY) | ねこ太note大学 | 18分 | 15,244 | テーマの選び方 | [分析済](youtube/20260909_rWxM8VhnpgY.md) |
 | 2026-08-06 | [【実演】AI(Claude)で有料noteを作って稼ぐ方法を公開します](https://www.youtube.com/watch?v=TO6p-QsR9A4) | 日給100万稼ぐニートパパのnote副業 | 29分 | 2,879 | AI 活用(Claude) | [分析済](youtube/20260806_TO6p-QsR9A4.md) |
-| 2026-06-21 | [【note公式発表】2026年後半はこんなnoteが稼げます](https://www.youtube.com/watch?v=OLTHHBAFVQs) | 日給100万稼ぐニートパパのnote副業 | 26分 | 1,350 | note 公式発表の解説 | 未読 |
+| 2026-06-21 | [【note公式発表】2026年後半はこんなnoteが稼げます](https://www.youtube.com/watch?v=OLTHHBAFVQs) | 日給100万稼ぐニートパパのnote副業 | 26分 | 1,350 | note 公式発表の解説 | [分析済](youtube/20260621_OLTHHBAFVQs.md) |
 | 2026-07-10 | [【完全版】ClaudeCode×note自動化の5ステップで資産を量産させろ!](https://www.youtube.com/watch?v=jXA-boFm_sw) | SHIFT AI ニュース | 18分 | 11,180 | AI 自動化(Claude Code) | [分析済](youtube/20260710_jXA-boFm_sw.md) |
 | 2026-08-19 | [【初心者これ一択】note作成せずに「note」で稼ぐ方法【AIアフィリエイト】](https://www.youtube.com/watch?v=YEOaclYTOD4) | ルパン15世 | 26分 | 25,376 | アフィリエイト | 未読 |
 | 2026-09-02 | [noteで楽天アフィリエイトを始める方法|始め方から注意点まで](https://www.youtube.com/watch?v=MhoFzElnlYk) | ゆかチャンネル | 19分 | 1,536 | アフィリエイト | 未読 |
