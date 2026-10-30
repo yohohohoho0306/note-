@@ -53,7 +53,7 @@ strategy/                         味のたねあかしに落とし込んだ戦�
 | 2026-10-03 | [【最短ルート】今から初心者がnoteで月10万円を稼ぐなら、僕はこれをやります](https://www.youtube.com/watch?v=1vE36sjjHLo) | note研究家ひらかわ | 43分 | 112,863 | 総合ロードマップ | [分析済](youtube/20261003_1vE36sjjHLo.md) |
 | 2026-10-17 | [【詰みます】AI×noteで稼げるのは今だけ?収益化の弊害が出る構造的理由](https://www.youtube.com/watch?v=zi65-akmWUc) | note研究家ひらかわ | 50分 | 24,936 | AI 活用 | [分析済](youtube/20261017_zi65-akmWUc.md) |
 | 2026-09-05 | [【累計2億】顔出しナシで稼ぐnote副業の全手順【らっこさんコラボ】](https://www.youtube.com/watch?v=YnWYLPypteM) | うと-おうちnoteで在宅ワーク | 33分 | 170,994 | 総合ロードマップ | [分析済](youtube/20260905_YnWYLPypteM.md) |
-| 2026-05-16 | [【AI丸投げ】有料noteを15分で作る全工程|月10万超えの実績あり](https://www.youtube.com/watch?v=2GpnDwow0mM) | うと-おうちnoteで在宅ワーク | 29分 | 283,275 | AI 活用 | 未読 |
+| 2026-05-16 | [【AI丸投げ】有料noteを15分で作る全工程|月10万超えの実績あり](https://www.youtube.com/watch?v=2GpnDwow0mM) | うと-おうちnoteで在宅ワーク | 29分 | 283,275 | AI 活用 | [分析済](youtube/20260516_2GpnDwow0mM.md) |
 | 2026-09-19 | [月400万でもnoteメンバーシップは絶対やらない理由](https://www.youtube.com/watch?v=MsszirCjNKM) | うと-おうちnoteで在宅ワーク | 21分 | 6,040 | メンバーシップ | [分析済](youtube/20260919_MsszirCjNKM.md) |
 | 2026-08-25 | [【完全在宅】SNS発信なし、note副業で稼ぐ方法を完全公開!](https://www.youtube.com/watch?v=u4qJ0wMwPXg) | 【在宅副業女子】ぽにょ | 34分 | 386,400 | 総合ロードマップ | [分析済](youtube/20260825_u4qJ0wMwPXg.md) |
 | 2026-10-05 | [【全力反抗】noteは稼げない!!って叩かれてますが、それ正しい稼ぎ方を知らないだけです](https://www.youtube.com/watch?v=4JYuoONUSf8) | 【在宅副業女子】ぽにょ | 33分 | 19,483 | 総合・反論 | [分析済](youtube/20261005_4JYuoONUSf8.md) |
